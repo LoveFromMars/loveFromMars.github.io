@@ -1,9 +1,31 @@
 const good = (id, name, price, image) => ({id, name, price, image})
 
 const goods = [
-	good('1', 'Крест серёжка', '2000', 'img/1.jpg'),
-	good('2', 'Крест серёжка', '2000', 'img/2.jpg'),
-	good('3', 'Крест серёжка', '2000', 'img/3.jpg')
+	good('1', 'Крест серёжка золото', '15800', 'img/1.jpg'),
+	good('2', 'Крест серёжка серебро', '13150', 'img/2.jpg'),
+	good('3', 'Моносерьга Крест с камнями', '15800', 'img/3.jpg'),
+	good('4', 'Кафф PEACE silver', '15800', 'img/4.jpg'),
+	good('5', 'Кафф LOVE gold', '15800', 'img/5.jpg'),
+	good('6', 'Кафф PEACE silver', '8700', 'img/11.jpg'),
+	good('7', 'Кафф PEACE silver', '8700', 'img/7.jpg'),
+	good('8', 'Кафф PEACE silver', '8700', 'img/8.jpg'),
+	good('9', 'Кафф PEACE silver', '8700', 'img/9.jpg'),
+	good('10', 'Кафф PEACE silver', '8700', 'img/10.jpg'),
+	good('11', 'Кафф PEACE silver', '8700', 'img/1.jpg'),
+	good('12', 'Кафф PEACE silver', '8700', 'img/2.jpg'),
+	good('13', 'Кафф PEACE silver', '8700', 'img/3.jpg'),
+	good('14', 'Кафф PEACE silver', '8700', 'img/4.jpg'),
+	good('15', 'Кафф PEACE silver', '8700', 'img/5.jpg'),
+	good('16', 'Кафф PEACE silver', '8700', 'img/11.jpg'),
+	good('17', 'Кафф PEACE silver', '8700', 'img/7.jpg'),
+	good('18', 'Кафф PEACE silver', '8700', 'img/8.jpg'),
+	good('19', 'Кафф PEACE silver', '8700', 'img/9.jpg'),
+	good('20', 'Кафф PEACE silver', '8700', 'img/10.jpg'),
+	good('21', 'Кафф PEACE silver', '8700', 'img/1.jpg'),
+	good('22', 'Кафф PEACE silver', '8700', 'img/2.jpg'),
+	good('23', 'Кафф PEACE silver', '8700', 'img/3.jpg'),
+	good('24', 'Кафф PEACE silver', '8700', 'img/4.jpg'),
+	good('25', 'Кафф PEACE silver', '8700', 'img/5.jpg')
 ]
 
 var arrCart = []
@@ -53,7 +75,6 @@ Vue.component('item-shop', {
 				}
 			}
 			localStorage["arrayGoods"] = JSON.stringify(arrCart);
-			/*this.inCart ? arrCart.push(this.product_data.id) : arrCart.splice( this.product_data.id, 1 )*/
 		}
 	},
 	computed: {
